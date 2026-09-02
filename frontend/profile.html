@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profile | FinGuard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/profile.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>FinGuard</h2>
+
+<a href="dashboard.html"><i class="fa fa-house"></i> Dashboard</a>
+
+<a href="transactions.html"><i class="fa fa-money-check-dollar"></i> Transactions</a>
+
+<a href="upload.html"><i class="fa fa-upload"></i> Upload CSV</a>
+
+<a href="alerts.html"><i class="fa fa-triangle-exclamation"></i> Fraud Alerts</a>
+
+<a href="graph.html"><i class="fa fa-share-nodes"></i> Graph Analytics</a>
+
+<a href="report.html"><i class="fa fa-file-lines"></i> Reports</a>
+
+<a class="active"><i class="fa fa-user"></i> Profile</a>
+
+</div>
+
+<div class="main">
+
+<div class="profile-card">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+<h2 id="username">User</h2>
+
+<p id="email">Email</p>
+
+<p id="role">Role</p>
+
+<button onclick="logout()">
+
+<i class="fa fa-right-from-bracket"></i>
+
+Logout
+
+</button>
+
+</div>
+
+</div>
+
+<script src="js/profile.js"></script>
+
+</body>
+
+</html>

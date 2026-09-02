@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fraud Detection</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/fraud.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>FinGuard</h2>
+
+<a href="dashboard.html">Dashboard</a>
+<a href="transactions.html">Transactions</a>
+<a class="active">Fraud Detection</a>
+<a href="graph.html">Graph</a>
+<a href="report.html">Reports</a>
+<a href="upload.html">Upload CSV</a>
+
+</div>
+
+<div class="main">
+
+<div class="container">
+
+<h2>Fraud Detection (ML Model)</h2>
+
+<div class="grid">
+
+<input id="time" type="number" placeholder="Time">
+
+<input id="amount" type="number" placeholder="Amount">
+
+<input id="v1" type="number" placeholder="V1">
+<input id="v2" type="number" placeholder="V2">
+<input id="v3" type="number" placeholder="V3">
+<input id="v4" type="number" placeholder="V4">
+<input id="v5" type="number" placeholder="V5">
+<input id="v6" type="number" placeholder="V6">
+<input id="v7" type="number" placeholder="V7">
+<input id="v8" type="number" placeholder="V8">
+<input id="v9" type="number" placeholder="V9">
+<input id="v10" type="number" placeholder="V10">
+<input id="v11" type="number" placeholder="V11">
+<input id="v12" type="number" placeholder="V12">
+<input id="v13" type="number" placeholder="V13">
+<input id="v14" type="number" placeholder="V14">
+<input id="v15" type="number" placeholder="V15">
+<input id="v16" type="number" placeholder="V16">
+<input id="v17" type="number" placeholder="V17">
+<input id="v18" type="number" placeholder="V18">
+<input id="v19" type="number" placeholder="V19">
+<input id="v20" type="number" placeholder="V20">
+<input id="v21" type="number" placeholder="V21">
+<input id="v22" type="number" placeholder="V22">
+<input id="v23" type="number" placeholder="V23">
+<input id="v24" type="number" placeholder="V24">
+<input id="v25" type="number" placeholder="V25">
+<input id="v26" type="number" placeholder="V26">
+<input id="v27" type="number" placeholder="V27">
+<input id="v28" type="number" placeholder="V28">
+
+</div>
+
+<button onclick="checkFraud()">
+
+Analyze Transaction
+
+</button>
+
+<div class="result">
+
+<h3>
+
+Prediction :
+
+<span id="prediction">
+
+-
+
+</span>
+
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/fraud.js"></script>
+
+</body>
+</html>

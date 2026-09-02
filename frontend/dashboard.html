@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FinGuard Dashboard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>FinGuard</h2>
+
+    <a href="dashboard.html" class="active">
+        <i class="fa-solid fa-house"></i> Dashboard
+    </a>
+
+    <a href="transactions.html">
+        <i class="fa-solid fa-money-check-dollar"></i> Transactions
+    </a>
+
+    <a href="fraud.html">
+        <i class="fa-solid fa-shield-halved"></i> Fraud Detection
+    </a>
+
+    <a href="alerts.html">
+        <i class="fa-solid fa-bell"></i> Fraud Alerts
+    </a>
+
+    <a href="graph.html">
+        <i class="fa-solid fa-share-nodes"></i> Graph Analytics
+    </a>
+
+    <a href="report.html">
+        <i class="fa-solid fa-file-lines"></i> Reports
+    </a>
+
+    <a href="upload.html">
+        <i class="fa-solid fa-upload"></i> Upload CSV
+    </a>
+
+    <a href="profile.html">
+        <i class="fa-solid fa-user"></i> Profile
+    </a>
+
+    <a href="#" id="logoutBtn">
+        <i class="fa-solid fa-right-from-bracket"></i> Logout
+    </a>
+
+</div>
+
+<div class="main">
+
+    <div class="topbar">
+
+        <h1>Dashboard</h1>
+
+        <div class="user">
+
+            <i class="fa-solid fa-user-circle"></i>
+
+            Admin
+
+        </div>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Total Transactions</h3>
+
+            <h1 id="totalTransactions">0</h1>
+
+        </div>
+
+
+    <div class="card">
+        <h3>High Risk</h3>
+        <h1 id="highRisk">0</h1>
+    </div>
+
+    <div class="card">
+        <h3>Medium Risk</h3>
+        <h1 id="riskScore">0</h1>
+    </div>
+
+    <div class="card">
+        <h3>Low Risk</h3>
+        <h1 id="lowRisk">0</h1>
+    </div>
+
+
+
+        <div class="card">
+
+            <h3>Fraud Alerts</h3>
+
+            <h1 id="fraudAlerts">0</h1>
+
+        </div>
+
+
+
+   
+
+    <div class="table-box">
+
+        <h2>Recent Transactions</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Sender</th>
+
+                    <th>Receiver</th>
+
+                    <th>Amount</th>
+
+                    <th>Status</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="transactionTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

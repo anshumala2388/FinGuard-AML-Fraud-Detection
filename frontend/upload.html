@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Upload CSV | FinGuard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/upload.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>FinGuard</h2>
+
+<a href="dashboard.html">
+<i class="fa fa-house"></i> Dashboard
+</a>
+
+<a href="transactions.html">
+<i class="fa fa-money-check-dollar"></i> Transactions
+</a>
+
+<a class="active">
+<i class="fa fa-upload"></i> Upload CSV
+</a>
+
+<a href="graph.html">
+<i class="fa fa-share-nodes"></i> Graph Analytics
+</a>
+
+<a href="report.html">
+<i class="fa fa-file-lines"></i> Reports
+</a>
+
+<a href="profile.html">
+<i class="fa fa-user"></i> Profile
+</a>
+
+</div>
+
+<div class="main">
+
+<div class="upload-card">
+
+<h1>Machine Learning Fraud Detection</h1>
+
+<p>Select a Credit Card Dataset (.csv)</p>
+
+<input
+type="file"
+id="csvFile"
+accept=".csv">
+
+<button onclick="uploadCSV()">
+
+<i class="fa fa-upload"></i>
+
+Upload Dataset
+
+</button>
+
+<div id="result" class="result">
+
+<h3>Waiting for Upload...</h3>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/upload.js"></script>
+
+</body>
+
+</html>
